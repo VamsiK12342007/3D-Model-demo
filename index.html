@@ -5,23 +5,136 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>3D moddel test</title>
+    <link href="css.css" rel="stylesheet" type="text/css">
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
 </head>
 
 <body>
-    <img src="hero-shot.png" alt="hero image" height="800" width="1000">
+    <div class="heroshotimage">
+        <img src="Hero-shot 2.png" alt="hero image" height="600px" width="800px">
+    </div>
 
-    <model-viewer src="Sofa.glb" alt="A 3D model of an astronaut" ar auto-rotate camera-controls></model-viewer>
+    <div class="models">
+        <div>
+            <h1>Leather Sofa</h1>
+        </div>
 
-    <model-viewer src="table.glb" alt="A 3D model of an astronaut" ar auto-rotate camera-controls>
-    </model-viewer>
+        <div>
+            <model-viewer src="Sofa.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                poster="poster.webp" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1"
+                    data-position="0.05946240631678501m 0.06621621274046711m 0.006872034894034739m"
+                    data-normal="-0.025313157168219896m 0.9995872299755272m -0.0135872640376767m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Leather seat</div>
+                </button><button class="Hotspot" slot="hotspot-2"
+                    data-position="-0.11826460830878657m 0.014522320145268344m 0.04140837653415907m"
+                    data-normal="-0.3306095896787914m 0.2560941533020962m 0.9083573547106357m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Sofa steel legs</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </model-viewer>
+        </div>
+    </div>
 
-    <model-viewer src="office_chair.glb" alt="A 3D model of an astronaut" ar auto-rotate camera-controls>
-    </model-viewer>
 
-    <model-viewer src="stool.glb" alt="A 3D model of an astronaut" ar auto-rotate camera-controls>
-    </model-viewer>
-    
+    <div class="models">
+
+        <div>
+            <div>
+                <h1>Office Chair</h1>
+            </div>
+
+            <model-viewer src="office_chair.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                poster="poster.webp" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1"
+                    data-position="-0.09222385387434659m 0.23091722954944402m -0.23386367949105333m"
+                    data-normal="-0.031023326783768627m 0.07287421685145552m 0.9968585163971638m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Clothed back seat.</div>
+                </button><button class="Hotspot" slot="hotspot-3"
+                    data-position="0.016073506513693086m -0.4609298203987429m 0.321916831277759m"
+                    data-normal="0.835893053220192m 0.00835355396221775m 0.5488287726736143m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Steel legs with plastic wheels</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </model-viewer>
+        </div>
+    </div>
+
+    <div>
+
+        <div class="models">
+            <div>
+                <h1>Wooden Table</h1>
+            </div>
+
+            <model-viewer src="wooden_table.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                poster="poster.webp" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-2"
+                    data-position="-0.09230107766919807m 0.4937089466323451m 0.016495679640177355m"
+                    data-normal="-0.0006618455160967309m 0.9999997595610717m -0.00020697418110448795m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Wooden Table Top</div>
+                </button><button class="Hotspot" slot="hotspot-3"
+                    data-position="-0.5317148542686375m -0.16868707391493787m 1.005969730328406m"
+                    data-normal="-0.9998148105946113m 0.00018484772362147944m 0.01924344945639564m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Wooden table Legs</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </model-viewer>
+        </div>
+    </div>
+
+    <div class="models">
+
+        <div>
+            <h1>Wooden Stool</h1>
+        </div>
+
+        <div>
+            <model-viewer src="stool.glb" ar ar-modes="webxr scene-viewer quick-look" camera-controls
+                poster="poster.webp" shadow-intensity="1">
+                <button class="Hotspot" slot="hotspot-1"
+                    data-position="-0.19119126206251152m 0.14280579027144913m 0.22499878793494593m"
+                    data-normal="-0.020095804970898724m 0.06657592573991912m 0.9975789716781547m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Hard wooden legs</div>
+                </button><button class="Hotspot" slot="hotspot-2"
+                    data-position="0.01509276852855565m 0.3780432656344922m 0.0988484181252485m"
+                    data-normal="-0.013410992142470895m 0.9995550591939165m -0.026642614916721433m"
+                    data-visibility-attribute="visible">
+                    <div class="HotspotAnnotation">Hard wooden seat.</div>
+                </button>
+                <div class="progress-bar hide" slot="progress-bar">
+                    <div class="update-bar"></div>
+                </div>
+                <button slot="ar-button" id="ar-button">
+                    View in your space
+                </button>
+            </model-viewer>
+        </div>
+    </div>
+
+
 
 </body>
 
